@@ -1,0 +1,243 @@
+
+body {
+        background-color: #FDFAF6;
+    }
+
+hr {/* dotted spacers */
+        border-style: none;
+        border-top: dotted #CDAC81;
+        border-width: 5px;
+        width: 5%;
+    }
+
+h1{ /* Name */
+        color: #00303F;
+        font-size: 3.5em;
+        font-family: 'Zen Loop';
+        margin:auto;  
+
+    }
+
+h2{ /* Adjectives */
+        color: #00303F;
+        font-size: 2.5em;
+        font-family: 'Zen Loop';
+        margin:auto;
+    }
+
+h3{ /* section headers */
+        color: #00303F;
+        font-size: 2em;
+        font-family:'Playfair Display', serif;
+    }
+
+p{
+    color: #00303F;
+    font-size: 1em;
+    font-family:'Source Sans Pro', sans-serif;
+    }   
+
+
+div { 
+    font-size: 4.5em;
+    padding:40px;
+    color: #00303F;
+    margin:auto;
+  }
+  
+
+
+span {
+    display:inline-block;
+    padding:0;
+    margin: 0 -20px 0 -4px;
+    user-select: none !important;
+    transition:0.3s;
+    width: 5%;
+    margin:auto;
+
+    }
+
+  span.space {
+    padding: 08px !important;
+    margin:0 2px;
+   }
+
+
+
+/* text in input boxes */
+::placeholder {
+    color: #2B4F60 ;
+    font-size: 1em;
+    font-family:'Playfair Display', serif;
+  }
+
+/* rounded text box */
+#box1 {
+    border-radius: 20px;
+    background: #eeeeed;
+    padding: 20px;
+    width: 200px;
+    height: 10px;
+    font-family:'Playfair Display', serif;
+  }
+
+  #box2 {
+    border-radius: 20px;
+    background: #eeeeed;
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+    font-family:'Playfair Display', serif;
+  }
+  
+
+    /*   Tilting even/odd letters 90 degrees 
+  
+  span.letter:nth-child(even):hover {
+    filter: blur(10px);
+    transform: rotate(90deg);
+   
+  }
+  
+  span.letter:nth-child(odd):hover {
+    filter: blur(10px);
+    transform: rotate(-90deg);
+  }
+
+*/
+
+
+/* "hello how are you?" 90 deg turn and colors */
+  span.letterh:hover{
+    color: #E1701A;
+   /* filter: blur(10px); */
+    transform: rotate(90deg);
+  }
+
+  span.lettere:hover{
+    color: #558776;
+    /* filter: blur(10px); */
+    transform: rotate(-90deg);
+  }
+  span.letterll:hover{
+    color: #FFCC29;
+    /* filter: blur(10px); */
+    transform: rotate(90deg);
+  }
+
+  span.letterlm:hover{
+    color: #A3A847;
+  /* filter: blur(10px); */
+    transform: rotate(-90deg);
+  }
+
+  span.lettero:hover{
+    color: #FFCC29;
+   /* filter: blur(10px); */
+    transform: rotate(-90deg);
+  }
+
+  span.letterc:hover{
+    color: #D44000;
+ /* filter: blur(10px); */
+    transform: rotate(-90deg);
+  }
+
+  span.letterw:hover{
+    color: #3A6351;
+ /* filter: blur(10px); */
+    transform: rotate(90deg);
+  }
+
+  span.lettera:hover{
+    color: #A3A847;
+ /* filter: blur(10px); */
+    transform: rotate(-90deg);
+  }
+
+  span.letterr:hover{
+    color: #E1701A;
+ /* filter: blur(10px); */
+    transform: rotate(90deg);
+  }
+
+  span.lettery:hover{
+    color: #D44000;
+ /* filter: blur(10px); */
+    transform: rotate(-90deg);
+  }
+
+  span.letteru:hover{
+    color: #558776;
+ /* filter: blur(10px); */
+    transform: rotate(90deg);
+  }
+
+  span.letterq:hover{
+    color: #81B214;
+ /* filter: blur(10px); */
+    transform: rotate(-90deg);
+  }
+
+
+
+
+
+
+
+/* sliding background */
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #dadada 50%, #b0beac 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:7s;
+  }
+  
+  .bg3 {
+    animation-duration:6s;
+  }
+  
+  .content {
+    background-color:rgb(219, 208, 223);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  
+  
+
